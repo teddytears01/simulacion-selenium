@@ -18,9 +18,9 @@ def login(driver, user, password):
     driver.find_element(By.ID, "password").send_keys(password)
     driver.find_element(By.ID, "login-button").click()
 
-# ============================
+
 # CASO 1: COMPRA COMPLETA
-# ============================
+
 def test_caso1():
     driver = iniciar_driver()
 
@@ -53,9 +53,9 @@ def test_caso1():
     time.sleep(3)
     driver.quit()
 
-# ============================
+
 # CASO 2: LOGIN INVÁLIDO
-# ============================
+
 def test_caso2():
     driver = iniciar_driver()
 
@@ -68,9 +68,9 @@ def test_caso2():
     time.sleep(3)
     driver.quit()
 
-# ============================
+
 # CASO 3: AGREGAR PRODUCTOS
-# ============================
+
 def test_caso3():
     driver = iniciar_driver()
 
@@ -88,9 +88,9 @@ def test_caso3():
     time.sleep(3)
     driver.quit()
 
-# ============================
+
 # CASO 4: ELIMINAR PRODUCTOS
-# ============================
+
 def test_caso4():
     driver = iniciar_driver()
 
@@ -108,9 +108,9 @@ def test_caso4():
     time.sleep(3)
     driver.quit()
 
-# ============================
+
 # CASO 5: CHECKOUT INCOMPLETO
-# ============================
+
 def test_caso5():
     driver = iniciar_driver()
 
@@ -129,9 +129,9 @@ def test_caso5():
     time.sleep(3)
     driver.quit()
 
-# ============================
+
 # CASO 6: NAVEGACIÓN ABOUT
-# ============================
+
 def test_caso6():
     driver = iniciar_driver()
 
@@ -149,7 +149,7 @@ def test_caso6():
 
 
 # ============================
-# EJECUCIÓN (elige uno)
+# EJECUCIÓN (elige uno quitando el #)
 # ============================
 
 if __name__ == "__main__":
@@ -158,4 +158,4 @@ if __name__ == "__main__":
     # test_caso3()
     # test_caso4()
     # test_caso5()
-     test_caso6()
+    # test_caso6()
